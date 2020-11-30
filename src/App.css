@@ -1,0 +1,82 @@
+.login-frame {
+  background-color: rgb(230,230,230);
+  border-radius: 5%;
+  /* font-family: Tahoma, Geneva, sans-serif;
+  font-size: medium;
+  font-weight: bold; */
+  margin: auto;
+  margin-top: 20%;
+  width: 200px;
+}
+
+.input-div {
+  width: 100%;
+}
+
+.login-texts {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.button-login {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.input-login {
+  width: 100%;
+}
+
+.home-frame {
+  background-color: rgb(230,230,230);
+  border-radius: 5%;
+  display: flex;
+  /* font-family: Tahoma, Geneva, sans-serif;
+  font-size: medium;
+  font-weight: bold; */
+  justify-content: center;
+  margin: auto;
+  margin-top: 20%;
+  width: 200px;
+}
+
+.home-buttons {
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.general-frame {
+  align-items: center;
+  background-color: rgb(230,230,230);
+  border-radius: 10%;
+  display: grid;
+  /* font-family: Tahoma, Geneva, sans-serif;
+  font-size: medium;
+  font-weight: bold; */
+  justify-content: center;
+  margin: auto;
+  margin-top: 20%;
+  width: 200px;
+}
+
+.general-button {
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+.report-frame {
+  background-color: rgb(230,230,230);
+  border-radius: 5%;
+  display: flex;
+  /* font-family: Tahoma, Geneva, sans-serif;
+  font-size: medium;
+  font-weight: bold; */
+  justify-content: center;
+  margin: auto;
+  margin-top: 20%;
+  width: 250px;
+}
