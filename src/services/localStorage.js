@@ -1,4 +1,5 @@
 import sha256 from 'crypto-js/sha256';
+import { requestRegister, requestLogin } from './SecureLogin';
 
 function createUsersDataBase() {
   const users = [] ;
@@ -16,7 +17,7 @@ export function createUser(user, password) {
   if (duplicateUser) {
     return 0;
   }
-  const pass = sha256(password).toString();
+  const pass = requestRegister(password);
   const obj = {
     user,
     password: pass,
@@ -31,8 +32,8 @@ export function login(user, password) {
   const usersDataBase = JSON.parse(localStorage.getItem('users'));
   const temp = usersDataBase.find((element) => element.user === user);
   if (temp) {
-    const pass = sha256(password).toString();
-    if (pass === temp.password) {
+    const pass = requestRegister(password);
+    if (requestLogin(password, temp.password)) {
       const token = [user, sha256(`${pass}tokenAuth`).toString()];
       localStorage.setItem('loginToken', JSON.stringify(token));
       return 1;
